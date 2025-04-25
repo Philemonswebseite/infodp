@@ -6,7 +6,7 @@ export DISPLAY=:0
 
 # URLs der Websites
 URL1="https://infodp.de.cool/ver.php?ic=true"
-URL2="https://example.com"
+URL2="https://infodp.de.cool/ver.php?ic=true&next=true"
 
 # Warte, bis der Desktop-Manager vollständig geladen ist
 sleep 5
