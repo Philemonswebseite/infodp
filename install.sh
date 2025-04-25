@@ -32,4 +32,4 @@ EOL
 sudo apt-get install -y wmctrl
 
 echo "Die Skripte wurden erfolgreich eingerichtet."
-sudo shutdown -r now
+#sudo shutdown -r now
