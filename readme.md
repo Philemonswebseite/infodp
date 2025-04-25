@@ -1,1 +1,1 @@
-git clone https://github.com/Philemonswebseite/infodp.git && cd infodp && ./install.sh
+git clone https://github.com/Philemonswebseite/infodp.git && cd infodp && chmod +x install.sh && sudo ./install.sh
