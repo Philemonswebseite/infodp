@@ -9,10 +9,13 @@ sleep 10
 
 # Chromium im Kiosk-Modus mit beiden Websites starten
 export DISPLAY=:0
-chromium-browser --kiosk "$URL1" &
-chromium-browser --kiosk "$URL2" &
+chromium-browser --new-window "$URL1" &
+sleep 2
+chromium-browser --new-window "$URL2" &
 
 # Warte kurz, damit beide Fenster geladen werden
 sleep 5
 
-# Hinweis: Split View mit `wmctrl` funktioniert möglicherweise nicht im Kiosk-Modus.
+# Fenster in Split View anordnen (erfordert wmctrl)
+wmctrl -r "$URL1" -e 0,0,0,960,1080
+wmctrl -r "$URL2" -e 0,960,0,960,1080
