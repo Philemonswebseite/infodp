@@ -1,4 +1,8 @@
+# filepath: vscode-vfs://github/Philemonswebseite/infodp/infodp.sh
 #!/bin/bash
+
+# Setze die DISPLAY-Variable
+export DISPLAY=:0
 
 # URLs der Websites
 URL1="https://infodp.de.cool/ver.php?ic=true"
