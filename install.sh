@@ -7,6 +7,10 @@ read PI_NAME
 # Namen in name.txt speichern
 echo "$PI_NAME" > name.txt
 
+# Setze Ausführungsrechte für alle Skripte
+chmod +x send_serveo_data.sh
+chmod +x infodp.sh
+
 # send_serveo_data.sh zu crontab hinzufügen (wird beim Booten ausgeführt)
 (crontab -l 2>/dev/null; echo "@reboot $(pwd)/send_serveo_data.sh") | crontab -
 
