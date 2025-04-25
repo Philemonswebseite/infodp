@@ -16,7 +16,7 @@ mkdir -p "$AUTOSTART_DIR"
 cat > "$AUTOSTART_DIR/infodp.desktop" <<EOL
 [Desktop Entry]
 Type=Application
-Exec=$(pwd)/infodp.sh
+Exec=bash -c "sleep 10; $(pwd)/infodp.sh"
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
